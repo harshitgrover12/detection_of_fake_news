@@ -7,8 +7,8 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 from sklearn.preprocessing import LabelEncoder
 from sklearn import metrics
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -156,4 +156,4 @@ nltk_ensemble.train(training)
 accuracy = nltk.classify.accuracy(nltk_model, testing)*100
 print("Voting Classifier: Accuracy: {}".format(accuracy))  
 
-#out of all these classifiers max accuracy achieved using logistic regession  of 86.22
+#out of all these classifiers max accuracy achieved using logistic regession  of 86.22%
